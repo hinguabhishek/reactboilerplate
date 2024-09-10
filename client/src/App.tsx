@@ -6,8 +6,9 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
   useEffect(()=>{
-    fetch('api/home').then((res)=>{
-      console.log(res);
+    fetch('api/home').then(async (res)=>{
+      const content = await res.text();
+      console.log('home response', content);
     })
   },[])
   return (
