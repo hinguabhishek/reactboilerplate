@@ -1,6 +1,10 @@
 import { createBrowserRouter, Outlet } from "react-router-dom";
 import { StartSetupPage } from "./pages/StartSetup";
+import { SetupStatusPage } from "./pages/SetupStatus";
 import Setup from "./pages/Setup";
+import { WelcomePage } from "./pages/WelcomePage";
+import { SetupCompletePage } from "./pages/SetupComplete";
+
 export const AppRoutes = () => {
   return createBrowserRouter([
     {
@@ -8,11 +12,11 @@ export const AppRoutes = () => {
       children: [
         {
           path: "/",
-          element: <Setup/>,
+          element: <WelcomePage/>,
         },
         {
           path: "/welcome",
-          element: <div>Welcome</div>,
+          element: <WelcomePage />,
         },
         {
           path: "/customer-details",
@@ -24,11 +28,15 @@ export const AppRoutes = () => {
         },
         {
           path: "/setup",
-          element: <div>Setup</div>,
+          element: <Setup/>,
+        },
+        {
+          path: "/setup-status",
+          element: <SetupStatusPage />,
         },
         {
           path: "/setup-complete",
-          element: <div>Setup Complete</div>,
+          element: <SetupCompletePage />,
         },
         {
           path: "/home",
