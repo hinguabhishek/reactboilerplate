@@ -13,3 +13,4 @@ const Welcome = () => {
     </s-container>
   );
 };
+export default Welcome
