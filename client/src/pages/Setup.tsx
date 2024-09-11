@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { JsonForms } from "@jsonforms/react";
 import { customCells, customRenderers } from "@avalara/skylab-form-renderer";
 import Markdown from "react-markdown";
 import {configSchema as LLMConfig} from '../data/configSchema';
 import {layout as LLMLayout} from '../data/layout';
 import "./Setup.css";
+import { useAppSelector } from "../store/hooks";
 
 const Setup = () => {
+  const {guide:{value:helpGuide}} = useAppSelector(s=>s)
   const payload = {
     address_validation_obj: {
       address_validation_enabled: true, // Default value from schema
@@ -31,10 +34,11 @@ const Setup = () => {
     },
   };
   
-  const [helpGuide, setHelpGuide] = useState("");
-  const [isContentLoading, setIsContentLoading] = useState(false);
+  // const [helpGuide, setHelpGuide] = useState("");
+  // const [isContentLoading, setIsContentLoading] = useState(false);
   const [dividerPosition, setDividerPosition] = useState(80);
   const [isResizing, setIsResizing] = useState(false);
+  const navigate = useNavigate();
   const handleMouseDown = () => {
     console.log("handleMouseDown");
     setIsResizing(true);
@@ -54,21 +58,21 @@ const Setup = () => {
       detail: [{ value: "DEFAULT", label: "TestCompany1" }],
     });
     dispatchEvent(companyInitEvent);
-    setIsContentLoading(true);
-    fetch("http://localhost:5000/user_guide", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        connectors: ["WooCommerce", "Adobe Commerce"],
-      }),
-    })
-      .then((res) => res.json())
-      .then((guideContent) => {
-        setHelpGuide(guideContent.guide);
-        setIsContentLoading(false);
-      });
+    // setIsContentLoading(true);
+    // fetch("http://localhost:5000/user_guide", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify({
+    //     connectors: ["WooCommerce", "Adobe Commerce"],
+    //   }),
+    // })
+    //   .then((res) => res.json())
+    //   .then((guideContent) => {
+    //     setHelpGuide(guideContent.guide);
+    //     setIsContentLoading(false);
+    //   });
   }, []);
   return (
     <>
@@ -83,9 +87,9 @@ const Setup = () => {
             <s-row>
               <s-col span={"12"}>
                 <div>
-                  <h2>Tell us more about your business</h2>
+                  <h2>You are all most done. Need few more information about your business to complete all your setup</h2>
                 </div>
-                <div>
+                <div className="pad-top-md">
                   <JsonForms
                     schema={LLMConfig}
                     uischema={LLMLayout}
@@ -99,7 +103,9 @@ const Setup = () => {
                   />
                 </div>
                 <div className="margin-top-sm">
-                  <button className="primary">Save</button>
+                  <button className="primary margin-bottom-lg" onClick={()=>{
+                    navigate("/setup-complete");
+                  }}>Save</button>
                 </div>
               </s-col>
             </s-row>
@@ -122,15 +128,6 @@ const Setup = () => {
                   </div>
                 </div>
                 <div className="pad-left-lg help-content-container">
-                  {isContentLoading && (
-                    <div className="flex flex-dir-col align-items-center">
-                      <s-loader loading="" aria-live="polite"></s-loader>
-                      <span className="loading-message">
-                        We are generating personalized help guide for you. I
-                        will take few minutes, Please wait.....
-                      </span>
-                    </div>
-                  )}
                   <Markdown>{helpGuide}</Markdown>
                 </div>
                 <div className="flex align-items-center pad-all-sm border-bottom-sm avi-config-panel-header-close-btn">

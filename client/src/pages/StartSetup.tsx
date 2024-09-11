@@ -8,7 +8,7 @@ export const StartSetupPage = () => {
   const navigate = useNavigate();
 
   function handleClick() {
-    navigate("/setup");
+    navigate("/setup-status");
   }
   
   return (

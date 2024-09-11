@@ -21,8 +21,8 @@ function App() {
   // };
   const user = {
     accountId: 1234567,
-    givenName: 'India',
-    familyName: 'Anderson',
+    givenName: 'Mamma',
+    familyName: 'Masa',
     avataxUserId: '45678',
     isLoggedIn: true
   }

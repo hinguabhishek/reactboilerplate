@@ -16,7 +16,7 @@ export const WelcomePage = () => {
           <button className="ghost-blue icon-leading">
             <s-icon name="user"></s-icon>Add a user to help set up</button>
         </div>
-        <h1>Welcome, <span className='orange-text'>India!</span></h1>
+        <h1>Welcome, <span className='orange-text'>Mamma Masa!</span></h1>
         <h2>From everyone here at Avalara, thank you for choosing Avalara Avatax. Your tax calculations are about to get a lot easier.</h2>
         <div className="flex align-items-center margin-top-lg margin-bottom-lg">
           <div className="welcome-text">

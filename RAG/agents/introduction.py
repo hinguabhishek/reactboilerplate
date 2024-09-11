@@ -34,10 +34,10 @@ class IntroductionAgent:
 
     def generate_introduction_with_connectors(self, state: ResearchState):
         connectors = state.get("task")["connectors"]
-        overview = self.generate_overview()
+        # overview = self.generate_overview()
         descriptions = self.generate_connector_descriptions(connectors)
         
         return {
-          "overview": overview,
+          # "overview": overview,
           "descriptions": descriptions
         }

@@ -64,7 +64,7 @@ async def user_guide():
   chief_editor = GuideMasterAgent(task)
   res = await chief_editor.run_research_task(task_id=uuid.uuid4(),user_info={"customer_id":"abcd"})
 
-  return jsonify({"guide": f"{res['overview']}\n\n{res['descriptions']}\n\n{res['guide']}"})
+  return jsonify({"guide": f"{res['descriptions']}\n\n{res['guide']}"})
 
 
 

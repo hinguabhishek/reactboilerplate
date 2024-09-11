@@ -17,7 +17,7 @@ export const CustomerDetailsPage = () => {
           <button className="ghost-blue icon-leading">
             <s-icon name="user"></s-icon>Add a user to help set up</button>
         </div>
-        <h1>Welcome, <span className='orange-text'>India!</span></h1>
+        <h1>Welcome, <span className='orange-text'>Mamma Masa!</span></h1>
         <h2>From everyone here at Avalara, thank you for choosing Avalara Avatax. Your tax calculations are about to get a lot easier.</h2>
         <div className="flex align-items-start justify-content-space margin-top-lg margin-bottom-lg customer-details-content">
           <div className="customer-products">
@@ -110,7 +110,7 @@ export const CustomerDetailsPage = () => {
             </SBox>
             <SBox>
               <h3>Understand how AvaTax usage is calculated and billed</h3>
-              <iframe src="https://www.youtube.com/embed/3rKrNhWGPoE?si=uB9ybd5wpmcpKAde" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/3rKrNhWGPoE?si=uB9ybd5wpmcpKAde" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
             </SBox>
           </div>
         </div>

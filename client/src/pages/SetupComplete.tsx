@@ -8,7 +8,7 @@ export const SetupCompletePage = () => {
   const navigate = useNavigate();
 
   function handleClick() {
-    navigate("/home");
+    navigate("/customer-details");
   }
   
   return (
@@ -39,7 +39,7 @@ export const SetupCompletePage = () => {
           </div>
         </div>
         <div className="margin-top-xl">
-          <button type="button" className='primary large w-250' onClick={handleClick}>Go to Home</button>
+          <button type="button" className='primary large w-250' onClick={handleClick}>Next</button>
         </div>
       </div>
     </SContainer>
