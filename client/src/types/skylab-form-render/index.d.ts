@@ -1,0 +1,1 @@
+declare module '@avalara/skylab-form-renderer';

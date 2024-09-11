@@ -10,7 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@avalara/skylab-form-renderer": "^0.0.1-1725940271",
     "@avalara/skylab-sdk": "^4.8.0",
+    "@jsonforms/core": "^3.3.0",
+    "@jsonforms/material-renderers": "^3.3.0",
+    "@jsonforms/react": "^3.3.0",
     "@reduxjs/toolkit": "^2.2.7",
     "install": "^0.13.0",
     "npm": "^10.8.3",

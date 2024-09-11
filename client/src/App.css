@@ -112,3 +112,7 @@ aui-footer {
 .welcome-image.divider-left {
   border-color: #E05200 !important;
 }
+
+.full-container-height {
+  height: calc(100vh - 93px);
+}
