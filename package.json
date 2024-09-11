@@ -7,8 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:server": "nodemon src/index.ts",
     "build:client": "cd client && npm run build",
+    "build:watch": "cd client && npm run build:watch",
     "build-server": "tsc",
-    "dev": "concurrently \"npm run build:client\" \"npm run dev:server\""
+    "dev": "concurrently \"npm run build:client\" \"npm run dev:server\"",
+    "dev:client": "concurrently \"npm run build:watch\" \"npm run build:watch\""
   },
   "keywords": [],
   "author": "",
