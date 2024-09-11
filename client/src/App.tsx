@@ -19,9 +19,16 @@ function App() {
   //   console.log("handleMouseMove", newPosition);
   //   setDividerPosition(newPosition);
   // };
+  const user = {
+    accountId: 1234567,
+    givenName: 'India',
+    familyName: 'Anderson',
+    avataxUserId: '45678',
+    isLoggedIn: true
+  }
   return (
     <>
-      <aui-header productname="Connector Pathfinders"></aui-header>
+      <aui-header productname="Connector Pathfinders" user={JSON.stringify(user)}></aui-header>
       {/* <main>
           <div style={{display:'flex'}}>
           <div style={{flexBasis:`${dividerPosition}%`, height:'100%', borderLeft: '1px solid gray'}} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp}>

@@ -1,12 +1,5 @@
 body {
-  margin-top: 0px;
-}
-main {
-  height: 90vh;
-}
-#root {
-  width: 100%;
-  margin-top:0
+  margin: 0px;
 }
 .content-panel {
   width: 80%;
@@ -44,4 +37,78 @@ main {
     inset-block-start: var(--ds-space-negative-300, -24px);
     inset-inline-end: var(--ds-space-negative-150, -12px);
     inset-inline-start: var(--ds-space-negative-100, -8px);
+}
+
+#root {
+  padding: 43px 0 48px;
+}
+
+main {
+  min-height: calc(100vh - 91px)
+}
+
+aui-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9;
+}
+
+aui-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+.setup-status-wrapper {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.setup-status-wrapper img {
+  width: 100%;
+}
+
+.next-steps .step {
+  width: 315px;
+}
+
+.pulse {
+  animation: bounce 2s infinite linear;
+}
+
+@keyframes bounce {
+  0%, 50%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+}
+
+.w-250 {
+  width: 250px;
+}
+
+.orange-text {
+  color: #E05200;
+}
+
+.welcome-text,
+.welcome-image {
+  flex: 1;
+}
+.welcome-text h4 {
+  max-width: 460px;
+}
+.welcome-image img {
+  width: 100%;
+}
+
+.welcome-image.divider-left {
+  border-color: #E05200 !important;
 }

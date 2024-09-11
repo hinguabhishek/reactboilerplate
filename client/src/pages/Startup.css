@@ -1,4 +1,27 @@
-.setup-startup-card-container {
-    height: 100vh;
-    width: 100%;
+.start-setup-warpper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.setup-startup-card-container img{
+    max-width: 100%;
+    display: block;
+}
+
+.setup-startup-card-container s-box{
+    flex: 1;
+    margin: 0 25px;
+}
+
+.setup-startup-card-container s-box button {
+    margin: 50px auto 100px;
+}
+
+.setup-startup-card-container img.ai-setup-img {
+    max-width: 360px;
+    margin: auto;
+}
+
+.manual-setup-img {
+    margin: 70px auto 30px;
 }
