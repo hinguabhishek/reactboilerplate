@@ -116,3 +116,69 @@ aui-footer {
 .full-container-height {
   height: calc(100vh - 93px);
 }
+
+.customer-details-warpper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.customer-details-warpper ul {
+  list-style: none;
+}
+
+.customer-details-content > div {
+  flex-basis: 25%;
+  margin: 0 10px;
+}
+
+.customer-products ul li {
+  display: flex;
+}
+
+.customer-products ul li span {
+  width: 40%;
+  display: block;
+}
+
+.customer-integrations ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.customer-integrations ul li {
+  flex-basis: 50%;
+}
+
+.customer-integrations img {
+  float: right;
+  width: 100px;
+}
+
+.customer-details-content .customer-integrations {
+  flex-basis: 35%;
+}
+
+.customer-details-content .account-details {
+  flex-basis: 40%;
+}
+
+.account-details img {
+  max-width: 100px;
+}
+
+.email s-icon {
+  vertical-align: middle;
+}
+
+.support li {
+  display: flex;
+}
+
+.support li span {
+  width: 40%;
+}
+
+.account-details iframe {
+  width: 100%;
+  height: 250px;
+}

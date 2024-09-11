@@ -4,6 +4,8 @@ import { SetupStatusPage } from "./pages/SetupStatus";
 import Setup from "./pages/Setup";
 import { WelcomePage } from "./pages/WelcomePage";
 import { SetupCompletePage } from "./pages/SetupComplete";
+import { CustomerDetailsPage } from "./pages/CustomerDetails";
+import { HomePage } from "./pages/Home";
 
 export const AppRoutes = () => {
   return createBrowserRouter([
@@ -20,7 +22,7 @@ export const AppRoutes = () => {
         },
         {
           path: "/customer-details",
-          element: <div>Customer Details</div>,
+          element: <CustomerDetailsPage />,
         },
         {
           path: "/setup-start",
@@ -40,7 +42,7 @@ export const AppRoutes = () => {
         },
         {
           path: "/home",
-          element: <div>home</div>,
+          element: <HomePage />,
         },
         {
           path: "*",
