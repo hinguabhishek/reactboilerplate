@@ -45,3 +45,7 @@ main {
     inset-inline-end: var(--ds-space-negative-150, -12px);
     inset-inline-start: var(--ds-space-negative-100, -8px);
 }
+
+.full-container-height {
+  height: calc(100vh - 93px);
+}
