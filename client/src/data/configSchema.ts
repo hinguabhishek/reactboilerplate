@@ -25,9 +25,9 @@ export const configSchema = {
         },
         enable_tax_calculation: {
           type: "boolean",
-          default: false,
+          default: true,
         },
-        enable_exemption_certificates: {
+        avatax_enable_tax_calculation: {
           type: "boolean",
           default: true,
         },

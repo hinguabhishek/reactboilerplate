@@ -11,7 +11,7 @@ export const layout = {
        {
         type: "VerticalLayout",
         elements:[ {
-            label: "Enable exemption certificates",
+            label: "Enable tax calculation",
             scope: "#/properties/common/properties/enable_tax_calculation",
             type: "Control",
             options: {
@@ -30,29 +30,9 @@ export const layout = {
           },
         },
         {
-          label: "Enable exemption certificates",
-          scope: "#/properties/common/properties/enable_exemption_certificates",
-          type: "Control",
-          options: {
-            toggle: true,
-            trueStatusLabel: "Yes",
-            falseStatusLabel: "No",
-          },
-        },
-        {
           label: "Shipping tax code",
           scope: "#/properties/common/properties/shipping_tax_code",
           type: "Control",
-        },
-        {
-          label: "Validate address",
-          scope: "#/properties/common/properties/validate_address",
-          type: "Control",
-          options:{
-            toggle: true,
-            trueStatusLabel: "Yes",
-            falseStatusLabel: "No",
-          },
         },
         {
           label: "Collect Business VAT ID",

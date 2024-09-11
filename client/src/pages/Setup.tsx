@@ -17,10 +17,8 @@ const Setup = () => {
     common: {
       collect_business_vat_id: false, // Default value from schema
       company_name: "", // String type with no default, set as empty
-      enable_tax_calculation: false, // Default value from schema
-      enable_exemption_certificates: true, // Default value from schema
-      shipping_tax_code: "", // String type with no default, set as empty
-      validate_address: true, // Default value from schema
+      enable_tax_calculation: true, // Default value from schema
+      shipping_tax_code: "FR", // String type with no default, set as empty
     },
     exemption_certificate_management_obj: {
       enabled: true, // Default value from schema
