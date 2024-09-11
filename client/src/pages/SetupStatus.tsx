@@ -28,7 +28,7 @@ export const SetupStatusPage = () => {
     <SContainer>
       <div className="setup-status-wrapper">
         <h1>Great that you chose <span className='orange-text'>Avi, Configuration Service! You’re on your way</span>! Just follow the steps to complete the rest of your setup.</h1>
-        <h3 style={{fontWeight:'normal'}}>It can take few minutes to grave all the default configurations and configure all the products. <strong>Avi</strong> will guide you if need more information from you.</h3>
+        <h3 style={{fontWeight:'normal'}}>It can take few minutes to grave all the default configurations and configure all the products. <strong>Avi</strong> will guide you if we need more information from you.</h3>
         <img src={setupStatusImage} alt="setup status" />
       </div>
     </SContainer>

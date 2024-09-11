@@ -85,7 +85,7 @@ const Setup = () => {
             <s-row>
               <s-col span={"12"}>
                 <div>
-                  <h2>You are all most done. Need few more information about your business to complete all your setup</h2>
+                  <h2>You are almost done. <span className="orange-text">Avi, Ai Service</span> generated default settings based on your account. Expand and review below sections then continue your setup journey. </h2>
                 </div>
                 <div className="pad-top-md">
                   <JsonForms
