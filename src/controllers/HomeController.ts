@@ -7,6 +7,7 @@ export default class HomeController {
         
     }
     public welcome(req: Request,res: Response, next: NextFunction) {
+        const data = ""
         return res.send('Hello World')
     }
 }

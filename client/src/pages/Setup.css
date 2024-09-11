@@ -1,0 +1,52 @@
+.sidebar-container-wrapper {
+    width: 20%;
+    height: 100vh;
+    border-right: 1px solid #E05200;
+    border-left: 1px solid #E05200;
+    position: fixed;
+    right: 0px;
+    background-color: white;
+    z-index: 5;
+}
+
+.content-container {
+    width: 80%;
+    height: 100vh;
+}
+.panel-content-slider-wrapper {
+    position: absolute;
+    inset-block: 0px;
+    outline: none;
+    opacity: 1;
+}
+.avi-config-panel-header {
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+}
+.avi-config-panel-header-close-btn{
+    position: absolute;
+    right: 0;
+    top: 5px;
+
+}
+.slider-control {
+    width: 10px;
+    height: 100vh;
+    position: absolute;
+    cursor: col-resize;
+    z-index: 8;
+}
+.avi-config-panel-header span{
+    color: orange;
+}
+.help-content-container{
+    overflow: auto;
+    max-height: calc(100vh - 92px);
+}
+
+.help-content-container ul {
+    padding-left: 1rem;
+}
+.help-content-container ol {
+    padding-left: 1rem;
+}

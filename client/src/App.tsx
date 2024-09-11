@@ -1,40 +1,47 @@
-import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { RouterProvider } from "react-router-dom";
+import { AppRoutes } from "./routes";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-  useEffect(()=>{
-    fetch('api/home').then(async (res)=>{
-      const content = await res.text();
-      console.log('home response', content);
-    })
-  },[])
+  // const [dividerPosition, setDividerPosition] = useState(80);
+  // const [isResizing, setIsResizing] = useState(false);
+  // const handleMouseDown = () => {
+  //   console.log("handleMouseDown");
+  //   setIsResizing(true);
+  // };
+  // const handleMouseUp = () => {
+  //   setIsResizing(false);
+  //   console.log("handleMouseUp");
+  // };
+  // const handleMouseMove = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+  //   if (!isResizing) return;
+  //   const newPosition = (e.clientX / window.innerWidth) * 100;
+  //   console.log("handleMouseMove", newPosition);
+  //   setDividerPosition(newPosition);
+  // };
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <aui-header productname="Connector Pathfinders"></aui-header>
+      {/* <main>
+          <div style={{display:'flex'}}>
+          <div style={{flexBasis:`${dividerPosition}%`, height:'100%', borderLeft: '1px solid gray'}} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp}>
+                  <RouterProvider router={AppRoutes()}/>
+              </div>
+              <div onMouseDown={handleMouseDown} style={{width:'10px', borderLeft:'solid 1px gray',cursor:'col-resize', height:'100%', overflow:'hidden', }}>
+                <div style={{width:'10px', height:'10px', backgroundColor:'orange'}}>
+                </div>
+              </div>
+              <div style={{width:`${100-dividerPosition}%`, height:'100%'}} onMouseMove={handleMouseMove}>
+                  Chat Panel
+              </div>
+          </div>
+      </main> */}
+          <main>
+           <RouterProvider router={AppRoutes()} />
+          </main>
+      <aui-footer></aui-footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

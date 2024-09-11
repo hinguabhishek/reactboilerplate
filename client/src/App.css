@@ -1,42 +1,47 @@
+body {
+  margin-top: 0px;
+}
+main {
+  height: 90vh;
+}
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: 100%;
+  margin-top:0
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.content-panel {
+  width: 80%;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.chat-panel {
+  width: 30%;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.container {
+ padding-left: 30px !important;
+ padding-right: 30px !important;
+ width: 100% !important;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.slider-button {
+  width: 24px;
+  height: 24px;
+  padding: var(--ds-space-0, 0px);
+  position: absolute;
+  background-color: var(--ds-surface-overlay, #FFFFFF);
+  border: 0px;
+  border-radius: var(--ds-border-radius-circle, 50%);
+  box-shadow: rgba(9, 30, 66, 0.08) 0px 0px 0px 1px, rgba(9, 30, 66, 0.08) 0px 2px 4px 1px;
+  color: var(--ds-text-subtle, #6B778C);
+  cursor: pointer;
+  inset-block-start: var(--ds-space-400, 32px);
+  inset-inline-start: 0px;
+  opacity: var(--ds--resize-button--opacity, 0);
+  outline: 0px;
+  transition: background-color 100ms linear, color 100ms linear, opacity 350ms cubic-bezier(0.2, 0, 0, 1);
+  transform: rotate(180deg);
+  transform-origin: 7px center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.button-span {
+  position: absolute;
+    inset-block-end: var(--ds-space-negative-300, -24px);
+    inset-block-start: var(--ds-space-negative-300, -24px);
+    inset-inline-end: var(--ds-space-negative-150, -12px);
+    inset-inline-start: var(--ds-space-negative-100, -8px);
 }
