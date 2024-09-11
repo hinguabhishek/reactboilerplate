@@ -20,7 +20,7 @@ export const WelcomePage = () => {
         <h2>From everyone here at Avalara, thank you for choosing Avalara Avatax. Your tax calculations are about to get a lot easier.</h2>
         <div className="flex align-items-center margin-top-lg margin-bottom-lg">
           <div className="welcome-text">
-            <h4 className="margin-bottom-xl">We are equally excited as you are to onboard you as soon as possible. Lets begin together!</h4>
+            <h3 className="margin-bottom-xl">We are equally excited as you are to onboard you as soon as possible. Lets begin together!</h3>
             <button type='button' className='primary large w-250' onClick={handleClick}>Let’s Start</button>
           </div>
           <div className="welcome-image divider-left">

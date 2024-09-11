@@ -98,11 +98,14 @@ aui-footer {
   color: #E05200;
 }
 
+.welcome-warpper h2 {
+  max-width: 705px;
+}
 .welcome-text,
 .welcome-image {
   flex: 1;
 }
-.welcome-text h4 {
+.welcome-text h3 {
   max-width: 460px;
 }
 .welcome-image img {
